@@ -7,7 +7,6 @@ class MyCaptcha extends Text
     public static function get()
     {
         $line_num = rand(3, 7); // рандомное количество линий на капче
-        define('DOCUMENT_ROOT', dirname(__FILE__));
         $code = self::generate_text(); // принимаем рандомные символы
         $img_arr = ["1.jpeg", '2.jpg', '3.jpg']; //рандомный фон
         $img = array_rand($img_arr, 1); // рандомный индекс из массива фонов
