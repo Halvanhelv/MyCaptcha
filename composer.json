@@ -1,11 +1,19 @@
 {
     "name": "synthesisone/mycaptcha",
+    "description": "Simple GD-based CAPTCHA generator and verifier for PHP. Session-backed, no temporary files written to disk.",
     "type": "library",
+    "license": "MIT",
+    "keywords": ["captcha", "gd", "security", "php"],
+    "homepage": "https://github.com/Halvanhelv/MyCaptcha",
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "php": ">=7.4",
+        "ext-gd": "*",
+        "ext-session": "*"
+    },
     "autoload": {
-    "psr-4": {
-      "mycaptcha\\" : "MyCaptcha"
+        "psr-4": {
+            "mycaptcha\\": "MyCaptcha/"
+        }
     }
-  }
 }
